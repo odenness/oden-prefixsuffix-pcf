@@ -4,7 +4,6 @@
 [![Power Platform](https://img.shields.io/badge/Power%20Platform-Compatible-green)](https://powerplatform.microsoft.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.7.2-blue)](https://www.typescriptlang.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/odenness/oden-prefixsuffix-pcf.svg)](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 
 A highly customizable **PowerApps Component Framework (PCF)** control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database.
 
