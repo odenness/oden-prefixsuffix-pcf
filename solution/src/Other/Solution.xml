@@ -2,12 +2,15 @@
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <!-- Unique Name of Cds Solution-->
-    <UniqueName>solution</UniqueName>
+    <UniqueName>OdenPrefixSuffixPCF</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="solution" languagecode="1033" />
+      <LocalizedName description="OdennessDev Prefix/Suffix Text Field PCF Control" languagecode="1033" />
     </LocalizedNames>
-    <Descriptions />
+    <Descriptions>
+      <!-- Description of Cds Solution in language code -->
+      <Description description="A highly customizable PowerApps Component Framework (PCF) control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database." languagecode="1033" />
+    </Descriptions>
     <Version>1.4.0</Version>
     <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
