@@ -1,10 +1,10 @@
 # 🎯 OdennessDev Prefix/Suffix Text Field PCF Control
 
-[![PCF Version](https://img.shields.io/badge/PCF-v1.4.0-blue)](https://github.com/odenness/oden-prefixsuffix-pcf)
+[![PCF Version](https://img.shields.io/badge/PCF-v0.1.0--alpha-orange)](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 [![Power Platform](https://img.shields.io/badge/Power%20Platform-Compatible-green)](https://powerplatform.microsoft.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.7.2-blue)](https://www.typescriptlang.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/odenness/oden-prefixsuffix-pcf.svg)](https://github.com/odenness/oden-prefixsuffix-pcf/releases)
+[![GitHub release](https://img.shields.io/github/release/odenness/oden-prefixsuffix-pcf.svg)](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 
 A highly customizable **PowerApps Component Framework (PCF)** control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database.
 
@@ -104,7 +104,7 @@ The control includes 22 built-in Unicode icons that work across all platforms:
 ## 🚀 Quick Start
 ### 📦 Installation
 
-1. **Download the latest solution** from [Releases](https://github.com/odenness/oden-prefixsuffix-pcf/releases)
+1. **Download the latest solution** from [Releases](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 2. **Import into Power Platform**:
    - Navigate to [PowerApps](https://make.powerapps.com)
    - Go to **Solutions** > **Import solution**
@@ -309,7 +309,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📈 Changelog
 
-### Version 1.4.0 (Latest)
+### Version 0.1.0-alpha (Latest)
+- 🚧 **ALPHA RELEASE**: Initial development version
 - ✅ **NEW**: Multi-field type support (Text, Email, Phone, URL, Currency, Decimal, Whole Number)
 - ✅ **NEW**: 22 built-in Unicode icons
 - ✅ **NEW**: Dynamics 365 native styling
@@ -319,14 +320,13 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - ✅ **IMPROVED**: Performance optimizations
 - ✅ **FIXED**: Prefix display issues
 
-### Version 1.0.0
-- 🎉 Initial release
-- ✅ Core prefix/suffix functionality
-- ✅ Basic icon support
-- ✅ Validation features
-- ✅ Customization options
+### Version 1.0.0 (Planned)
+- � **Stable release** with full testing
+- 📚 **Complete documentation**
+- 🎥 **Video tutorials**
+- 🧪 **Comprehensive test coverage**
 
-[View Full Changelog](https://github.com/odenness/oden-prefixsuffix-pcf/releases)
+[View Full Changelog](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 
 ## 🙏 Acknowledgments
 
@@ -343,7 +343,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ⭐ **Star this repo** if you find it useful! ⭐
 
-[📦 Download](https://github.com/odenness/oden-prefixsuffix-pcf/releases) • [🐛 Report Bug](https://github.com/odenness/oden-prefixsuffix-pcf/issues) • [💡 Request Feature](https://github.com/odenness/oden-prefixsuffix-pcf/issues/new)
+[📦 Download](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.0.1-alpha) • [🐛 Report Bug](https://github.com/odenness/oden-prefixsuffix-pcf/issues) • [💡 Request Feature](https://github.com/odenness/oden-prefixsuffix-pcf/issues/new)
 
 </div>
 
