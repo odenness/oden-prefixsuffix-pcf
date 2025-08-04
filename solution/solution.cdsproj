@@ -20,12 +20,11 @@
     Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both)
     Solution Localization Control, if you want to enabled localization of your solution, un-comment SolutionPackageEnableLocalization and set the value to true. - Requires use of -loc flag on Solution Clone or Sync
   -->
-  <!--
   <PropertyGroup>
-    <SolutionPackageType>Managed</SolutionPackageType>
+    <SolutionPackageType>Both</SolutionPackageType>
     <SolutionPackageEnableLocalization>false</SolutionPackageEnableLocalization>
+    <SolutionZipFile>OdenPrefixSuffixPCF_1_4_0</SolutionZipFile>
   </PropertyGroup>
-  -->
 
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="1.*" />
@@ -54,5 +53,12 @@
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets')" />
+
+  <!-- Custom target to rename solution files after build -->
+  <Target Name="RenameSolutionFiles" AfterTargets="PowerAppsPackage">
+    <Copy SourceFiles="bin\Debug\solution.zip" DestinationFiles="OdenPrefixSuffixPCF_1_4_0_unmanaged.zip" />
+    <Copy SourceFiles="bin\Debug\solution_managed.zip" DestinationFiles="OdenPrefixSuffixPCF_1_4_0_managed.zip" />
+    <Message Text="Solution packages renamed to: OdenPrefixSuffixPCF_1_4_0_unmanaged.zip and OdenPrefixSuffixPCF_1_4_0_managed.zip" Importance="high" />
+  </Target>
 
 </Project>
