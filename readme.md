@@ -8,7 +8,8 @@
 
 A highly customizable **PowerApps Component Framework (PCF)** control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database.
 
-![PCF Control Preview](https://via.placeholder.com/800x200/2196F3/FFFFFF?text=PCF+Control+Preview+-+Coming+Soon)
+![PCF Control Preview](<img width="2472" height="340" alt="image" src="https://github.com/user-attachments/assets/ecec30f8-751b-4fdb-8d5c-f34149fc3237" />)
+
 
 ## ✨ Key Features
 
