@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="OdennessDev" constructor="PrefixSuffixTextField" version="1.4.0" 
+           display-name-key="OdennessDev Prefix/Suffix Text Field" 
+           description-key="A customizable field control that displays prefix and suffix text without saving them to the database. Supports text, email, phone, URL, currency, decimal, and whole number fields."
+           control-type="standard">
+    
+    <!-- Main text value property -->
+    <property name="textValue" 
+              display-name-key="Field Value" 
+              description-key="The field value that will be saved to the database (supports text and numeric fields)" 
+              of-type-group="strings" 
+              usage="bound" 
+              required="true" />
+    
+    <!-- Prefix text property -->
+    <property name="prefixText" 
+              display-name-key="Prefix Text" 
+              description-key="Text to display before the input field (not saved to database)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Suffix text property -->
+    <property name="suffixText" 
+              display-name-key="Suffix Text" 
+              description-key="Text to display after the input field (not saved to database)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Placeholder text property -->
+    <property name="placeholderText" 
+              display-name-key="Placeholder Text" 
+              description-key="Placeholder text to show in the input field" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Maximum length property -->
+    <property name="maxLength" 
+              display-name-key="Maximum Length" 
+              description-key="Maximum number of characters allowed in the text field" 
+              of-type="Whole.None" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Read-only property -->
+    <property name="isReadOnly" 
+              display-name-key="Read Only" 
+              description-key="Make the text field read-only" 
+              of-type="TwoOptions" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Background color property -->
+    <property name="backgroundColor" 
+              display-name-key="Background Color" 
+              description-key="Background color for the control (hex value)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Text color property -->
+    <property name="textColor" 
+              display-name-key="Text Color" 
+              description-key="Text color for the control (hex value)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Border color property -->
+    <property name="borderColor" 
+              display-name-key="Border Color" 
+              description-key="Border color for the control (hex value)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Font size property -->
+    <property name="fontSize" 
+              display-name-key="Font Size" 
+              description-key="Font size in pixels" 
+              of-type="Whole.None" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Font weight property -->
+    <property name="fontWeight" 
+              display-name-key="Font Weight" 
+              description-key="Font weight (normal, bold, etc.)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Width property -->
+    <property name="controlWidth" 
+              display-name-key="Control Width" 
+              description-key="Width of the control in pixels" 
+              of-type="Whole.None" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Height property -->
+    <property name="controlHeight" 
+              display-name-key="Control Height" 
+              description-key="Height of the control in pixels" 
+              of-type="Whole.None" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Prefix icon property -->
+    <property name="prefixIcon" 
+              display-name-key="Prefix Icon" 
+              description-key="Icon to display before the prefix text (Person, Mail, Phone, Building, etc.)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Suffix icon property -->
+    <property name="suffixIcon" 
+              display-name-key="Suffix Icon" 
+              description-key="Icon to display after the suffix text (Search, Edit, Info, CheckMark, etc.)" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Show clear button property -->
+    <property name="showClearButton" 
+              display-name-key="Show Clear Button" 
+              description-key="Show a clear button to empty the text field" 
+              of-type="TwoOptions" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Validation pattern property -->
+    <property name="validationPattern" 
+              display-name-key="Validation Pattern" 
+              description-key="Regular expression pattern for input validation" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Error message property -->
+    <property name="errorMessage" 
+              display-name-key="Error Message" 
+              description-key="Error message to display when validation fails" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              required="false" />
+    
+    <!-- Define supported data types -->
+    <type-group name="strings">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.URL</type>
+      <type>Currency</type>
+      <type>Decimal</type>
+      <type>Whole.None</type>
+      <type>FP</type>
+    </type-group>
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/PrefixSuffixTextField.css" order="1" />
+      <img path="img/preview.png" />
+      <resx path="strings/PrefixSuffixTextField.1033.resx" version="1.0.0" />
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

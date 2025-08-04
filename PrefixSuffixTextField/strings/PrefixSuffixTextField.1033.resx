@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <data name="OdennessDev Prefix/Suffix Text Field_DisplayName" xml:space="preserve">
+    <value>OdennessDev Prefix/Suffix Text Field</value>
+    <comment>Display name for the control</comment>
+  </data>
+  
+  <data name="OdennessDev Prefix/Suffix Text Field_Description" xml:space="preserve">
+    <value>A customizable text field control that displays prefix and suffix text without saving them to the database</value>
+    <comment>Description for the control</comment>
+  </data>
+  
+  <data name="Text Value_DisplayName" xml:space="preserve">
+    <value>Text Value</value>
+    <comment>Display name for the text value property</comment>
+  </data>
+  
+  <data name="Text Value_Description" xml:space="preserve">
+    <value>The main text value that will be saved to the database</value>
+    <comment>Description for the text value property</comment>
+  </data>
+  
+  <data name="Prefix Text_DisplayName" xml:space="preserve">
+    <value>Prefix Text</value>
+    <comment>Display name for the prefix text property</comment>
+  </data>
+  
+  <data name="Prefix Text_Description" xml:space="preserve">
+    <value>Text to display before the input field (not saved to database)</value>
+    <comment>Description for the prefix text property</comment>
+  </data>
+  
+  <data name="Suffix Text_DisplayName" xml:space="preserve">
+    <value>Suffix Text</value>
+    <comment>Display name for the suffix text property</comment>
+  </data>
+  
+  <data name="Suffix Text_Description" xml:space="preserve">
+    <value>Text to display after the input field (not saved to database)</value>
+    <comment>Description for the suffix text property</comment>
+  </data>
+</root>

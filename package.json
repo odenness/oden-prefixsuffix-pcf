@@ -1,0 +1,48 @@
+{
+  "name": "pcf-project",
+  "version": "1.0.0",
+  "description": "OdennessDev PrefixSuffixTextField PCF Control Project",
+  "keywords": [
+    "PCF",
+    "PowerApps",
+    "Component Framework",
+    "OdennessDev",
+    "Text Field",
+    "Prefix",
+    "Suffix"
+  ],
+  "author": "OdennessDev",
+  "license": "MIT",
+  "main": "index.ts",
+  "scripts": {
+    "build": "pcf-scripts build",
+    "clean": "pcf-scripts clean",
+    "rebuild": "pcf-scripts rebuild",
+    "start": "pcf-scripts start",
+    "refreshTypes": "pcf-scripts refreshTypes"
+  },
+  "dependencies": {
+    "@types/powerapps-component-framework": "^1.3.4",
+    "@types/xrm": "^9.0.0"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "^1.20.1",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.2.9",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "pcf-scripts": "^1",
+    "pcf-start": "^1",
+    "typescript": "^4.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/odennessdev/pcf-prefix-suffix-textfield"
+  },
+  "bugs": {
+    "url": "https://github.com/odennessdev/pcf-prefix-suffix-textfield/issues"
+  },
+  "homepage": "https://github.com/odennessdev/pcf-prefix-suffix-textfield#readme"
+}
