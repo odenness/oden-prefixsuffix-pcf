@@ -25,12 +25,16 @@ A customizable PowerApps Component Framework (PCF) control that enhances text in
 - Custom dimensions (width and height)
 - 22 built-in Unicode icons plus custom symbol support
 - Responsive design with automatic theme adaptation
+- **Enhanced**: Complete dark/light theme support for all field types
+- **Enhanced**: High contrast mode compatibility with improved accessibility
 
 **Accessibility & User Experience**
 - Full keyboard navigation and tab order support
 - Screen reader compatibility with proper ARIA labels
-- High contrast mode support
+- High contrast mode support with enhanced styling
 - Clear visual feedback for focus and disabled states
+- **New**: Improved focus indicators and visual hierarchy
+- **New**: Enhanced print styles for all field types
 
 ## Supported Field Types
 
@@ -142,11 +146,22 @@ npm start
 # Navigate to solution folder
 cd solution
 
-# Build solution package
+# Build solution package for Release
 msbuild /p:configuration=Release
 
-# The generated .zip file will be in bin/Release folder
+# Build solution package for Debug (development)
+msbuild /p:configuration=Debug
+
+# The generated .zip files will be in bin/Release or bin/Debug folder
+# - solution.zip (unmanaged solution)
+# - solution_managed.zip (managed solution)
 ```
+
+### Version Management
+
+GitHub Release: **0.1.0-alpha** | Internal Solution: **1.4.1**
+
+The solution uses internal versioning (1.4.1) for development tracking while maintaining the alpha release status on GitHub for public releases.
 
 ## Usage Examples
 
@@ -183,23 +198,38 @@ Max Length: 8
 
 ### Color Schemes
 
-**Professional Theme**
+**Professional Light Theme**
 ```yaml
-Background Color: "#ffffff"
+Background Color: "#faf9f8"
 Text Color: "#323130"  
-Border Color: "#d3d3d3"
+Border Color: "#605e5c"
 Font Size: 14
 Font Weight: "400"
 ```
 
-**Dark Theme**
+**Dark Theme (Auto-detected)**
 ```yaml
-Background Color: "#1f1f1f"
+Background Color: "#2d2d30"
 Text Color: "#ffffff"
-Border Color: "#404040"
+Border Color: "#3e3e42"
 Font Size: 14
 Font Weight: "400"
 ```
+
+**High Contrast Mode (Auto-detected)**
+- Enhanced border visibility (2-3px borders)
+- Stronger font weights for better readability
+- Optimized color contrasts meeting WCAG standards
+
+### Theme Support Features
+
+The control automatically adapts to:
+- **System theme preference** (light/dark mode detection)
+- **High contrast accessibility** settings
+- **Print media** with optimized black & white styling
+- **Field-type specific** theme variations for enhanced UX
+
+All field types (text, email, phone, URL, currency, decimal, number) receive consistent theming with type-specific enhancements.
 
 ### Validation Patterns
 
@@ -267,21 +297,24 @@ We welcome contributions! Here's how to get started:
 
 ## Changelog
 
-### Version 0.1.0-alpha (Current)
-- Initial alpha release
+### Version 0.1.0-alpha (Current GitHub Release)
+- Initial alpha release for public testing
 - Multi-field type support (Text, Email, Phone, URL, Currency, Decimal, Whole Number)
-- 22 built-in Unicode icons
-- Dynamics 365 native styling
-- Enhanced accessibility features
-- Dark theme support
-- TypeScript implementation
-- Performance optimizations
+- 22 built-in Unicode icons with enhanced rendering
+- Dynamics 365 native styling with improved theming
+- **Enhanced**: Complete dark/light theme support for all field types
+- **Enhanced**: High contrast mode compatibility and accessibility
+- **Enhanced**: Field-type specific styling optimizations
+- **Enhanced**: Print styles for professional documentation
+- **Enhanced**: Browser compatibility with standardized CSS properties
+- TypeScript implementation with performance optimizations
+- Comprehensive validation and error handling
 
-### Version 1.0.0 (Planned)
-- Stable release with comprehensive testing
-- Complete documentation
-- Video tutorials
-- Full test coverage
+### Internal Development Versions
+- **v1.4.0**: Latest internal build with all enhancements
+- **v1.3.x**: Theme system improvements
+- **v1.2.x**: Enhanced field type support
+- **v1.1.x**: Icon system and validation improvements
 
 [View Full Changelog](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 

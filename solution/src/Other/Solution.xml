@@ -11,7 +11,7 @@
       <!-- Description of Cds Solution in language code -->
       <Description description="A highly customizable PowerApps Component Framework (PCF) control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database." languagecode="1033" />
     </Descriptions>
-    <Version>1.4.0</Version>
+    <Version>1.4.1</Version>
     <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>

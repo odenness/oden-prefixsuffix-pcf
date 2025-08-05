@@ -51,6 +51,10 @@
     user-select: none;
 }
 
+.odennessdev-prefix.show {
+    display: flex;
+}
+
 .odennessdev-prefix .ms-Icon {
     margin-right: 4px;
 }
@@ -74,6 +78,10 @@
     min-height: 30px;
     line-height: 30px;
     user-select: none;
+}
+
+.odennessdev-suffix.show {
+    display: flex;
 }
 
 .odennessdev-suffix .ms-Icon {
@@ -200,6 +208,7 @@
 }
 
 .odennessdev-input[type="number"] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 
@@ -209,11 +218,7 @@
     font-variant-numeric: tabular-nums;
 }
 
-/* Email field validation styling */
-.odennessdev-input[type="email"]:invalid {
-    /* Only show validation styling when user has interacted */
-}
-
+/* Email field validation styling - Intentionally minimal to avoid premature validation feedback */
 .odennessdev-input[type="email"]:focus:invalid {
     border-color: #d13438;
 }
@@ -256,6 +261,15 @@
     .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-suffix {
         background-color: #f3f2f1;
         color: #a19f9d;
+    }
+    
+    /* Light mode field type specific styling */
+    .odennessdev-input[type="email"]:focus:invalid {
+        border-color: #d13438;
+    }
+    
+    .odennessdev-input.currency-field {
+        color: #323130;
     }
 }
 
@@ -332,6 +346,20 @@
     
     .odennessdev-error-message {
         color: #f1707b;
+    }
+    
+    /* Dark mode field type specific styling */
+    .odennessdev-input[type="email"]:focus:invalid {
+        border-color: #f1707b;
+    }
+    
+    .odennessdev-input.currency-field {
+        color: #ffffff;
+    }
+    
+    .odennessdev-input[type="number"]::-webkit-outer-spin-button,
+    .odennessdev-input[type="number"]::-webkit-inner-spin-button {
+        filter: invert(1);
     }
 }
 

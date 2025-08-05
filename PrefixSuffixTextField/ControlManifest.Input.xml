@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="OdennessDev" constructor="PrefixSuffixTextField" version="1.4.0" 
+  <control namespace="OdennessDev" constructor="PrefixSuffixTextField" version="1.4.1" 
            display-name-key="OdennessDev Prefix/Suffix Text Field" 
            description-key="A customizable field control that displays prefix and suffix text without saving them to the database. Supports text, email, phone, URL, currency, decimal, and whole number fields."
            control-type="standard">
