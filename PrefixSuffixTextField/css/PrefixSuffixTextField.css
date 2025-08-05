@@ -183,20 +183,80 @@
     display: none !important;
 }
 
-/* High contrast mode support */
-@media (prefers-contrast: high) {
+/* Field type specific styling enhancements */
+.odennessdev-input[type="text"],
+.odennessdev-input[type="email"],
+.odennessdev-input[type="tel"],
+.odennessdev-input[type="url"],
+.odennessdev-input[type="number"] {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Enhanced number field styling */
+.odennessdev-input[type="number"]::-webkit-outer-spin-button,
+.odennessdev-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.odennessdev-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Currency field specific styling */
+.odennessdev-input.currency-field {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Email field validation styling */
+.odennessdev-input[type="email"]:invalid {
+    /* Only show validation styling when user has interacted */
+}
+
+.odennessdev-input[type="email"]:focus:invalid {
+    border-color: #d13438;
+}
+
+/* Enhanced focus states for all field types */
+.odennessdev-input:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Light mode enhancements */
+@media (prefers-color-scheme: light) {
     .odennessdev-input-container {
-        border-width: 2px;
+        background-color: #faf9f8;
+        border-color: #605e5c;
+    }
+    
+    .odennessdev-input {
+        background-color: #faf9f8;
+        color: #323130;
+    }
+    
+    .odennessdev-input:focus {
+        background-color: #ffffff;
     }
     
     .odennessdev-prefix,
     .odennessdev-suffix {
-        border-width: 2px;
+        background-color: #d3d3d3;
+        color: #323130;
     }
     
-    .odennessdev-prefix-suffix-wrapper.focused .odennessdev-input-container {
-        box-shadow: none;
-        border-width: 3px;
+    /* Enhanced disabled state for light mode */
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-input {
+        background-color: #f3f2f1;
+        color: #a19f9d;
+    }
+    
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-prefix,
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-suffix {
+        background-color: #f3f2f1;
+        color: #a19f9d;
     }
 }
 
@@ -215,9 +275,13 @@
         border-color: #6e6e6e;
     }
     
-    .odennessdev-prefix-suffix-wrapper.focused .odennessdev-input-container {
-        border-color: #0078d4;
-        box-shadow: 0 0 0 1px #0078d4;
+    .odennessdev-input {
+        background-color: #2d2d30;
+        color: #ffffff;
+    }
+    
+    .odennessdev-input:focus {
+        background-color: #323537;
     }
     
     .odennessdev-prefix,
@@ -231,8 +295,20 @@
         color: #6e6e6e;
     }
     
-    .odennessdev-input:disabled {
+    /* Enhanced disabled state for dark mode */
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-input-container {
         background-color: #3e3e42;
+        border-color: #484644;
+    }
+    
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-input {
+        background-color: #3e3e42;
+        color: #6e6e6e;
+    }
+    
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-prefix,
+    .odennessdev-prefix-suffix-wrapper.disabled .odennessdev-suffix {
+        background-color: #484644;
         color: #6e6e6e;
     }
     
@@ -245,3 +321,85 @@
         color: #ffffff;
     }
     
+    .odennessdev-clear-button:active {
+        background-color: #484644;
+    }
+    
+    /* Dark mode error styling */
+    .odennessdev-prefix-suffix-wrapper.error .odennessdev-input-container {
+        border-color: #f1707b;
+        box-shadow: 0 0 0 1px #f1707b;
+    }
+    
+    .odennessdev-error-message {
+        color: #f1707b;
+    }
+}
+
+/* Enhanced high contrast support for all field types */
+@media (prefers-contrast: high) {
+    .odennessdev-input-container {
+        border-width: 2px;
+    }
+    
+    .odennessdev-prefix,
+    .odennessdev-suffix {
+        border-width: 2px;
+    }
+    
+    .odennessdev-prefix-suffix-wrapper.focused .odennessdev_input-container {
+        box-shadow: none;
+        border-width: 3px;
+    }
+    
+    /* Ensure text is highly visible in high contrast */
+    .odennessdev-input {
+        font-weight: 500;
+    }
+    
+    .odennessdev-prefix,
+    .odennessdev-suffix {
+        font-weight: 600;
+    }
+}
+
+/* Responsive adjustments for all field types */
+@media (max-width: 768px) {
+    .odennessdev-prefix,
+    .odennessdev-suffix {
+        padding: 0 6px;
+        font-size: 13px;
+    }
+    
+    .odennessdev-input {
+        padding: 5px 6px;
+        font-size: 14px;
+    }
+    
+    .odennessdev-icon {
+        font-size: 13px;
+    }
+}
+
+/* Print styles for all field types */
+@media print {
+    .odennessdev-input-container {
+        border: 1px solid #000000 !important;
+        background-color: #ffffff !important;
+    }
+    
+    .odennessdev-input {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    .odennessdev-prefix,
+    .odennessdev-suffix {
+        background-color: #f0f0f0 !important;
+        color: #000000 !important;
+    }
+    
+    .odennessdev-clear-button {
+        display: none !important;
+    }
+}
