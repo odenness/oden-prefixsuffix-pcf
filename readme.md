@@ -3,7 +3,7 @@
 [![PCF Version](https://img.shields.io/badge/PCF-v0.1.0--alpha-orange)](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha)
 [![Power Platform](https://img.shields.io/badge/Power%20Platform-Compatible-green)](https://powerplatform.microsoft.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.7.2-blue)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/odenness/oden-prefixsuffix-pcf/blob/main/LICENSE)
 
 A highly customizable **PowerApps Component Framework (PCF)** control that enhances text input fields with prefix and suffix display capabilities. Perfect for currency fields, phone numbers, email addresses, and any text input that needs visual context without storing formatting in the database.
 
@@ -342,7 +342,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ⭐ **Star this repo** if you find it useful! ⭐
 
-[📦 Download](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.0.1-alpha) • [🐛 Report Bug](https://github.com/odenness/oden-prefixsuffix-pcf/issues) • [💡 Request Feature](https://github.com/odenness/oden-prefixsuffix-pcf/issues/new)
+[📦 Download](https://github.com/odenness/oden-prefixsuffix-pcf/releases/tag/v0.1.0-alpha) • [🐛 Report Bug](https://github.com/odenness/oden-prefixsuffix-pcf/issues) • [💡 Request Feature](https://github.com/odenness/oden-prefixsuffix-pcf/issues/new)
 
 </div>
 
